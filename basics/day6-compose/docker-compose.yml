@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: day6-web
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
